@@ -23,6 +23,24 @@ server <- function(input, output, session) {
       ))
     }
     
-    results
+    display_results <- results
+    
+    display_names <- c(
+      day = "Day",
+      outbound_departure = "Outbound Departure",
+      outbound_arrival = "Outbound Arrival",
+      return_departure = "Return Departure",
+      return_arrival = "Return Arrival"
+    )
+    
+    names(display_results) <- ifelse(
+      names(display_results) %in% names(display_names),
+      display_names[names(display_results)],
+      names(display_results)
+    )
+    
+    display_results
+    
   })
+  
 }

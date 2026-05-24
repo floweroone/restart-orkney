@@ -5,7 +5,7 @@ account: floweroone
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17410750
-bundleId: 12033031
+bundleId: 12033063
 url: https://floweroone.shinyapps.io/restart-orkney/
 version: 1
 asMultiple: FALSE

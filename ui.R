@@ -207,28 +207,18 @@ ui <- page_fluid(
         col_widths = c(6, 6),
         
         div(
-          class = "card-box green-card",
+          class = "card-box blue-card equal-info-card",
           h3(class = "section-title", "Services"),
-          p("Restart Orkney can help customers and donors with several collection and delivery services:"),
           tags$ul(
             class = "hours-list",
-            tags$li(
-              strong("Delivery of purchased items:"),
-              " Delivery for furniture or household items bought from the Restart Orkney showroom."
-            ),
-            tags$li(
-              strong("Pick-up of donated items:"),
-              " Collection of furniture or household goods you would like to donate."
-            ),
-            tags$li(
-              strong("House clear-outs:"),
-              " Support with clearing out larger quantities of reusable household items."
-            )
+            tags$li("Delivery of items purchased from the showroom"),
+            tags$li("Pick-up of furniture or household goods for donation"),
+            tags$li("House clear-outs for reusable household items")
           )
         ),
         
         div(
-          class = "card-box blue-card",
+          class = "card-box blue-card equal-info-card",
           h3(class = "section-title", "Restart Orkney Open Hours"),
           tags$ul(
             class = "hours-list",
@@ -286,7 +276,7 @@ ui <- page_fluid(
       ),
       
       div(
-        class = "card-box blue-card",
+        class = "card-box green-card",
         h3(class = "section-title", "How This Helps"),
         p(
           "Inter-island delivery can be difficult to coordinate because ferry times, return routes, customer availability, ",
