@@ -199,9 +199,6 @@ all_timetables_filtered <- all_timetables_with_hours %>%
   semi_join(valid_sailings, by = "sailing_id") %>%
   select(-time_minutes, -open_minutes, -close_minutes)
 
-View(all_timetables_filtered)
-
-
 # -----------------------------
 # ROUND TRIP SEARCH FUNCTION
 # -----------------------------
