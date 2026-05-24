@@ -140,7 +140,6 @@ all_timetables <- all_timetables %>%
   ) %>%
   select(-weekday_from_header, -day_part, -month_from_header)
 
-View(all_timetables)
 
 # -----------------------------
 # FILTER TO RESTART ORKNEY HOURS
